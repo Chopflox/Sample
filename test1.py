@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-tree = ET.parse('xmltest.xml')
+tree = ET.parse('items.xml')
 root = tree.getroot()
 
 # all items data
