@@ -1,6 +1,10 @@
-import xml.dom.minidom
+import xml.etree.ElementTree as ET
+tree = ET.parse('xmltest.xml')
+root = tree.getroot()
 
+# all items data
+print('Expertise Data:')
 
-dom = xml.dom.minidom.parseString(xmlString)
-xml = dom.toprettyxml()
-print(xml)
+for elem in root:
+   for subelem in elem:
+      print(subelem.text)
