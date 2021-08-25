@@ -1,4 +1,3 @@
-from imports.pigSay import main, pig_say
 import pigSay
 
 newPig = pigSay.main()
