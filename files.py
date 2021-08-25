@@ -14,7 +14,6 @@ with open(r"C:\Users\eburkan\Desktop\SampleGit\hello.txt") as hosts:
     print(hosts.read())
 
 
-
 with open(r"C:\Users\eburkan\Desktop\SampleGit\hello.txt") as the_file:
 
     for line in the_file:
@@ -23,3 +22,5 @@ with open(r"C:\Users\eburkan\Desktop\SampleGit\hello.txt") as the_file:
 with open(r"C:\Users\eburkan\Desktop\SampleGit\hello.txt") as the_file:    
     the_file.write('tester nå.\n')
     the_file.write('hoohhoho.\n')
+
+    
