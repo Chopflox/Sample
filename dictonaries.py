@@ -1,26 +1,24 @@
-import random
-from typing import KeysView
-peopleF = {
+peoples = {
  'David': {
- 'Fun fact': 'var maskot på uni',
- 'Another fun fact': 'kan trikse'    
+     'var maskot på uni',
  },
  'Jeff': {
- 'Fun fact': 'født i frankrike'
+     'født i frankrike'
  },
- 'Anna': {
- 'Fun fact': 'Has arachnophobia'
+ 'Anna':{
+     'Has arachnophobia'
  },
- 'Dylan': {
- 'Fun fact': 'Har et pinnsvin'
+ 'Dylan':{
+     'Har et pinnsvin'
  }
 }
+for people in peoples:
+    print('{}  {}'.format(people,peoples[people]))
+   
+print('-------' *5)   
+peoples['Jeff'] = 'tissa i buksa'
+   
+peoples['Potty'] = 'ser bra ut'
 
-names = 'david', 'Jeff', 'Anna', 'Dylan'
-
-peopleFR = random.choice(list(peopleF.values()))
-peopleRV = random.choice(names)
-
-
-print(names)
-print(peopleFR)
+for people in peoples:
+    print('{}  {}'.format(people,peoples[people]))
